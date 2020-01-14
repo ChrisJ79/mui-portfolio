@@ -78,6 +78,7 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
+
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
@@ -104,20 +105,22 @@ export default function Album() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
+
+        <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
-            {cards.map(card => (
+{cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
+
+                <Card className={classes.card[0]}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="/zurich-quiz-app-thumbnail.png"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      App Name
+                      App #1
                     </Typography>
                     <Typography>
                       JavaScript, React, Material UI
@@ -132,10 +135,85 @@ export default function Album() {
                     </Button>
                   </CardActions>
                 </Card>
+
+                <Card className={classes.card[1]}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="/react-noteboard-thumbnail.png"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      App #2
+                    </Typography>
+                    <Typography>
+                      JavaScript, React, Material UI
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View Project
+                    </Button>
+                    <Button size="small" color="primary">
+                      Source Code
+                    </Button>
+                  </CardActions>
+                </Card>
+
+                <Card className={classes.card[2]}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="/logo512.png"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      App #3
+                    </Typography>
+                    <Typography>
+                      JavaScript, React, Material UI
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View Project
+                    </Button>
+                    <Button size="small" color="primary">
+                      Source Code
+                    </Button>
+                  </CardActions>
+                </Card>
+
+                <Card className={classes.card[3]}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="/giphy-api-thumbnail.png"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      App #4
+                    </Typography>
+                    <Typography>
+                      JavaScript, React, Material UI
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View Project
+                    </Button>
+                    <Button size="small" color="primary">
+                      Source Code
+                    </Button>
+                  </CardActions>
+                </Card>                                
+
+
               </Grid>
-            ))}
+))}
           </Grid>
         </Container>
+
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
