@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import PropTypes from 'prop-types';
 
 
 const useStyles = makeStyles(theme => ({
@@ -61,40 +62,34 @@ export default function Album() {
 
     const projects = [
         {
-          "image": "/zurich-quiz-app-thumbnail.png",
+          "image": "./public/zurich-quiz-app-thumbnail.png",
           "projectTitle": "App Name #1",
-          "techUsed": "React.js / JavaScript / Material UI",
-          "key": ""
+          "techUsed": "React.js / JavaScript / Material UI"
         },
         {
-          "image": "../logo512.png",
+          "image": "/logo.svg",
           "projectTitle": "App Name #2",
-          "techUsed": "React.js / JavaScript / Material UI",
-          "key": ""
+          "techUsed": "React.js / JavaScript / Material UI"
         },
         {
           "image": "",
           "projectTitle": "App Name #3",
-          "techUsed": "React.js / JavaScript / Material UI",
-          "key": ""
+          "techUsed": "React.js / JavaScript / Material UI"
         },
         {
           "image": "",
           "projectTitle": "App Name #4",
-          "techUsed": "React.js / JavaScript / Material UI",
-          "key": ""
+          "techUsed": "React.js / JavaScript / Material UI"
         },
         {
           "image": "",
           "projectTitle": "App Name #5",
-          "techUsed": "React.js / JavaScript / Material UI",
-          "key": ""
+          "techUsed": "React.js / JavaScript / Material UI"
         },
         {
           "image": "",
           "projectTitle": "App Name #6",
-          "techUsed": "React.js / JavaScript / Material UI",
-          "key": ""
+          "techUsed": "React.js / JavaScript / Material UI"
         }        
     ];
     return (
@@ -150,13 +145,18 @@ export default function Album() {
           <Grid container spacing={4}>
         {projects.map((project, index) => {
           return (
-              <Grid item key={projects.key} xs={12} sm={6} md={4}>
+              <Grid item key={project} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
+
+
                   <CardMedia
                     className={classes.cardMedia}
                     title="Image of app"
-                    image={projects.image}
+                    src={project.image}
                   />
+
+
+
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
