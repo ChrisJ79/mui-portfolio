@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
@@ -15,18 +15,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="textSecondary" align="center">
-//       {'Copyright © '}
-//       <Link color="inherit" href="https://material-ui.com/">
-//         Your Website
-//       </Link>{' '}
-//       {new Date().getFullYear()}
-//       {'.'}
-//     </Typography>
-//   );
-// }
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -47,6 +35,8 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'center', 
+    alignItems: 'center'   
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -60,24 +50,70 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6];
+
+
 
 export default function Album() {
-  const classes = useStyles();
+    const classes = useStyles();
 
-  return (
-    <React.Fragment>
+  
+
+
+    const projects = [
+        {
+          "image": "/zurich-quiz-app-thumbnail.png",
+          "projectTitle": "App Name #1",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": ""
+        },
+        {
+          "image": "../logo512.png",
+          "projectTitle": "App Name #2",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": ""
+        },
+        {
+          "image": "",
+          "projectTitle": "App Name #3",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": ""
+        },
+        {
+          "image": "",
+          "projectTitle": "App Name #4",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": ""
+        },
+        {
+          "image": "",
+          "projectTitle": "App Name #5",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": ""
+        },
+        {
+          "image": "",
+          "projectTitle": "App Name #6",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": ""
+        }        
+    ];
+    return (
+
+  <div>
+        {/* AppBar */}
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-        <Container maxWidth="sm">
-          <Typography variant="h6" color="inherit" align="center" noWrap>
-              Made with React and Material UI
+        <Container maxWidth="sm" align="center">
+          <Typography variant="h6" color="inherit" noWrap>
+            Made with React.js and Material UI
           </Typography>
         </Container>  
         </Toolbar>
       </AppBar>
       <main>
+      {/* End Appbar */}
+
 
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -86,8 +122,8 @@ export default function Album() {
               Chris Johnson
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Front End Web Developer.<br />
-              React Enthusiast.<br />
+              Front End Web Developer<br />
+              React Enthusiast
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -105,123 +141,62 @@ export default function Album() {
             </div>
           </Container>
         </div>
-          {/* End hero unit */}
+        {/* End hero unit */}
 
+
+ 
+        {/* Project unit */}
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
-{cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-
-                <Card className={classes.card[0]}>
+        {projects.map((project, index) => {
+          return (
+              <Grid item key={projects.key} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="/zurich-quiz-app-thumbnail.png"
-                    title="Image title"
+                    title="Image of app"
+                    image={projects.image}
                   />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      App #1
-                    </Typography>
-                    <Typography>
-                      JavaScript, React, Material UI
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
+                    <p>{project.techUsed}</p>
+                    <hr/>
+                  </CardContent> 
+                  <CardActions align="center">
                     <Button size="small" color="primary">
                       View Project
                     </Button>
                     <Button size="small" color="primary">
                       Source Code
                     </Button>
-                  </CardActions>
+                  </CardActions>                  
                 </Card>
-
-                <Card className={classes.card[1]}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="/react-noteboard-thumbnail.png"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      App #2
-                    </Typography>
-                    <Typography>
-                      JavaScript, React, Material UI
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View Project
-                    </Button>
-                    <Button size="small" color="primary">
-                      Source Code
-                    </Button>
-                  </CardActions>
-                </Card>
-
-                <Card className={classes.card[2]}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="/logo512.png"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      App #3
-                    </Typography>
-                    <Typography>
-                      JavaScript, React, Material UI
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View Project
-                    </Button>
-                    <Button size="small" color="primary">
-                      Source Code
-                    </Button>
-                  </CardActions>
-                </Card>
-
-                <Card className={classes.card[3]}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="/giphy-api-thumbnail.png"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      App #4
-                    </Typography>
-                    <Typography>
-                      JavaScript, React, Material UI
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View Project
-                    </Button>
-                    <Button size="small" color="primary">
-                      Source Code
-                    </Button>
-                  </CardActions>
-                </Card>                                
-
-
               </Grid>
-))}
-          </Grid>
-        </Container>
+            );
+         })}               
+            </Grid>
+          </Container>     
+        {/* End hero unit */}            
 
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Github Logo
+          Something here to give the footer a purpose!
         </Typography>
       </footer>
       {/* End footer */}
-    </React.Fragment>
-  );
+
+  </div>    
+    )
 }
+
+
+
+
+
+
+
