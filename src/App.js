@@ -14,7 +14,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import PropTypes from 'prop-types';
 
 
 const useStyles = makeStyles(theme => ({
@@ -41,6 +40,7 @@ const useStyles = makeStyles(theme => ({
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
+    height: '0'
   },
   cardContent: {
     flexGrow: 1,
@@ -57,39 +57,42 @@ const useStyles = makeStyles(theme => ({
 export default function Album() {
     const classes = useStyles();
 
-  
-
-
     const projects = [
         {
-          "image": "./public/zurich-quiz-app-thumbnail.png",
+          "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "App Name #1",
-          "techUsed": "React.js / JavaScript / Material UI"
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": "1"
         },
         {
-          "image": "/logo.svg",
+          "img": "",
           "projectTitle": "App Name #2",
-          "techUsed": "React.js / JavaScript / Material UI"
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": "2"
         },
         {
-          "image": "",
+          "img": "",
           "projectTitle": "App Name #3",
-          "techUsed": "React.js / JavaScript / Material UI"
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": "3"
         },
         {
-          "image": "",
+          "img": "",
           "projectTitle": "App Name #4",
-          "techUsed": "React.js / JavaScript / Material UI"
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": "4"
         },
         {
-          "image": "",
+          "img": "",
           "projectTitle": "App Name #5",
-          "techUsed": "React.js / JavaScript / Material UI"
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": "5"
         },
         {
-          "image": "",
+          "img": "",
           "projectTitle": "App Name #6",
-          "techUsed": "React.js / JavaScript / Material UI"
+          "techUsed": "React.js / JavaScript / Material UI",
+          "key": "6"
         }        
     ];
     return (
@@ -145,15 +148,17 @@ export default function Album() {
           <Grid container spacing={4}>
         {projects.map((project, index) => {
           return (
-              <Grid item key={project} xs={12} sm={6} md={4}>
+              <Grid item key={project.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
 
 
-                  <CardMedia
-                    className={classes.cardMedia}
-                    title="Image of app"
-                    src={project.image}
-                  />
+
+
+
+
+                  <CardMedia>
+                    <img src={project.img} alt=""/>
+                  </CardMedia>
 
 
 
