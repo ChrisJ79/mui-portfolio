@@ -61,38 +61,50 @@ export default function Album() {
     const projects = [
         {
           "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "App Name #1",
-          "techUsed": "React.js / JavaScript / Material UI",
+          "projectTitle": "React Noteboard",
+          "techUsed": "React.js / JavaScript",
+          "projectLink": "",
+          "sourceCode": "",
           "key": "1"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "App Name #2",
-          "techUsed": "React.js / JavaScript / Material UI",
+          "img": "/zurich-quiz-app-thumbnail.png",
+          "projectTitle": "Quiz App",
+          "techUsed": "jQuery / JavaScript / CSS / HTML",
+          "projectLink": "",
+          "sourceCode": "",
           "key": "2"
         },
         {
           "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "App Name #3",
-          "techUsed": "React.js / JavaScript / Material UI",
+          "projectTitle": "RSVP App",
+          "techUsed": "React.js / JavaScript",
+          "projectLink": "",
+          "sourceCode": "",
           "key": "3"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "App Name #4",
-          "techUsed": "React.js / JavaScript / Material UI",
+          "img": "/giphy-api-thumbnail__1150x646.png",
+          "projectTitle": "Giphy API",
+          "techUsed": "jQuery / JavaScript / UI Kit / CSS",
+          "projectLink": "",
+          "sourceCode": "",
           "key": "4"
         },
         {
           "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "App Name #5",
-          "techUsed": "React.js / JavaScript / Material UI",
+          "projectTitle": "Scoreboard",
+          "techUsed": "React.js / JavaScript",
+          "projectLink": "",
+          "sourceCode": "",
           "key": "5"
         },
         {
           "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "App Name #6",
-          "techUsed": "React.js / JavaScript / Material UI",
+          "projectTitle": "Online Store",
+          "techUsed": "React.js / Redux / React Router",
+          "projectLink": "",
+          "sourceCode": "",
           "key": "6"
         }        
     ];
@@ -153,20 +165,15 @@ export default function Album() {
                 <Card className={classes.card}>
 
 
-
-
-
-
                   <CardMedia>
                     <img className="imgHeight" src={project.img} alt=""/>
                   </CardMedia>
 
 
 
-                  <CardContent>
+                  <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
-                    <hr/>
                   </CardContent> 
                   <CardActions align="center">
                     <Button size="small" color="primary">

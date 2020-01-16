@@ -2,6 +2,7 @@
   text-align: center;
 }
 
-.imgHeight {
-  height: 156px !important;
-}
+  .imgHeight {
+    height: auto;
+    width: 100%;
+  }
