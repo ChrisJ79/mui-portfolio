@@ -117,11 +117,19 @@ export default function Album() {
         <Toolbar>
         <Container maxWidth="sm" align="center">
 
-
-
           <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            Made with <img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
+            Made with <br /><img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
+          </Typography> 
+
+          {/* <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
+            Made with <br />
           </Typography>
+                    <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
+            <img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br />
+          </Typography>
+                    <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
+            <img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
+          </Typography> */}
 
 
 
