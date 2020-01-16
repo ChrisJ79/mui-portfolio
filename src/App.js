@@ -63,16 +63,16 @@ export default function Album() {
           "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "React Noteboard",
           "techUsed": "React.js / JavaScript",
-          "projectLink": "",
-          "sourceCode": "",
+          "projectLink": "http://ChrisJ79.github.io/noteboard",
+          "sourceCode": "https://github.com/ChrisJ79/noteboard",
           "key": "1"
         },
         {
           "img": "/zurich-quiz-app-thumbnail.png",
           "projectTitle": "Quiz App",
           "techUsed": "jQuery / JavaScript / CSS / HTML",
-          "projectLink": "",
-          "sourceCode": "",
+          "projectLink": "http://chrisj79.github.io/quiz-app/final.html",
+          "sourceCode": "https://github.com/ChrisJ79/quiz-app",
           "key": "2"
         },
         {
@@ -87,8 +87,8 @@ export default function Album() {
           "img": "/giphy-api-thumbnail__1150x646.png",
           "projectTitle": "Giphy API",
           "techUsed": "jQuery / JavaScript / UI Kit / CSS",
-          "projectLink": "",
-          "sourceCode": "",
+          "projectLink": "http://chrisj79.github.io/API-HACK/main.html",
+          "sourceCode": "https://github.com/ChrisJ79/API-HACK",
           "key": "4"
         },
         {
@@ -117,7 +117,7 @@ export default function Album() {
         <Toolbar>
         <Container maxWidth="sm" align="center">
           <Typography variant="h6" color="inherit" noWrap>
-            Made with React.js and Material UI
+            Made with<img src="/react_no_bg__56x50.png" /> React.js and <img src="/material-ui__62x50.png" />Material UI
           </Typography>
         </Container>  
         </Toolbar>
@@ -163,23 +163,18 @@ export default function Album() {
           return (
               <Grid item key={project.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-
-
                   <CardMedia>
                     <img className="imgHeight" src={project.img} alt=""/>
                   </CardMedia>
-
-
-
                   <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
                   </CardContent> 
                   <CardActions align="center">
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href={project.projectLink} target="_blank">
                       View Project
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href={project.sourceCode} target="_blank">
                       Source Code
                     </Button>
                   </CardActions>                  
@@ -189,7 +184,21 @@ export default function Album() {
          })}               
             </Grid>
           </Container>     
-        {/* End hero unit */}            
+        {/* End Project Unit */}      
+
+
+        {/* WP Sites Link Unit */} 
+          <Container className={classes.cardGrid} maxWidth="sm" align="center">
+          <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              Click below to see some WordPress sites that I've built over the years.
+          </Typography>
+            <Button variant="contained" size="large" color="primary" href="http://cjportfolio.flywheelsites.com/" target="_blank">
+              View
+            </Button>
+          </Container>
+
+
+        {/* End WP Sites Link Unit */}      
 
       </main>
       {/* Footer */}
