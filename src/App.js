@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import './App.css';
 
 
 const useStyles = makeStyles(theme => ({
@@ -65,31 +66,31 @@ export default function Album() {
           "key": "1"
         },
         {
-          "img": "",
+          "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "App Name #2",
           "techUsed": "React.js / JavaScript / Material UI",
           "key": "2"
         },
         {
-          "img": "",
+          "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "App Name #3",
           "techUsed": "React.js / JavaScript / Material UI",
           "key": "3"
         },
         {
-          "img": "",
+          "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "App Name #4",
           "techUsed": "React.js / JavaScript / Material UI",
           "key": "4"
         },
         {
-          "img": "",
+          "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "App Name #5",
           "techUsed": "React.js / JavaScript / Material UI",
           "key": "5"
         },
         {
-          "img": "",
+          "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "App Name #6",
           "techUsed": "React.js / JavaScript / Material UI",
           "key": "6"
@@ -157,7 +158,7 @@ export default function Album() {
 
 
                   <CardMedia>
-                    <img src={project.img} alt=""/>
+                    <img className="imgHeight" src={project.img} alt=""/>
                   </CardMedia>
 
 
