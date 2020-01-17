@@ -100,11 +100,11 @@ export default function Album() {
           "key": "5"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "Online Store",
-          "techUsed": "React.js / Redux / React Router",
-          "projectLink": "",
-          "sourceCode": "",
+          "img": "/shopping-list-thumbnail.png",
+          "projectTitle": "Shopping List",
+          "techUsed": "jQuery / JavaScript / Bootstrap / CSS ",
+          "projectLink": "http://chrisj79.github.io/shopping-list/main.html",
+          "sourceCode": "https://github.com/ChrisJ79/shopping-list",
           "key": "6"
         }        
     ];
@@ -171,7 +171,7 @@ export default function Album() {
 
  
         {/* Project unit */}
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container spacing={4}>
         {projects.map((project, index) => {
           return (
