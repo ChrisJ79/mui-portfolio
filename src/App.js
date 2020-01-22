@@ -118,7 +118,7 @@ export default function Album() {
         <Container maxWidth="sm" align="center">
 
           <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            Made with <br /><img src="/src/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="/src/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
+            Made with <br /><img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
           </Typography> 
 
           {/* <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
