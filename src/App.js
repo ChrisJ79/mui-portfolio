@@ -118,7 +118,7 @@ export default function Album() {
         <Container maxWidth="sm" align="center">
 
           <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            Made with <br /><img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
+            Made with <br /><img src="/public/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
           </Typography> 
 
           {/* <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
@@ -177,8 +177,9 @@ export default function Album() {
           return (
               <Grid item key={project.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                  <CardMedia className="imgHeight" src={project.img} alt=""/>
-
+                  <CardMedia>
+                    <img className="imgHeight" src={project.img} alt=""/>
+                  </CardMedia>
                   <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
