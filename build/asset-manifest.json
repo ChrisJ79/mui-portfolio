@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mui-portfolio/static/css/main.31d1f2d5.chunk.css",
+    "main.js": "/mui-portfolio/static/js/main.48b433cf.chunk.js",
+    "main.js.map": "/mui-portfolio/static/js/main.48b433cf.chunk.js.map",
+    "runtime-main.js": "/mui-portfolio/static/js/runtime-main.0788d335.js",
+    "runtime-main.js.map": "/mui-portfolio/static/js/runtime-main.0788d335.js.map",
+    "static/js/2.dcfacbaf.chunk.js": "/mui-portfolio/static/js/2.dcfacbaf.chunk.js",
+    "static/js/2.dcfacbaf.chunk.js.map": "/mui-portfolio/static/js/2.dcfacbaf.chunk.js.map",
+    "index.html": "/mui-portfolio/index.html",
+    "precache-manifest.f8c78c830a265bdb31651c57311a0dbf.js": "/mui-portfolio/precache-manifest.f8c78c830a265bdb31651c57311a0dbf.js",
+    "service-worker.js": "/mui-portfolio/service-worker.js",
+    "static/css/main.31d1f2d5.chunk.css.map": "/mui-portfolio/static/css/main.31d1f2d5.chunk.css.map",
+    "static/js/2.dcfacbaf.chunk.js.LICENSE": "/mui-portfolio/static/js/2.dcfacbaf.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0788d335.js",
+    "static/js/2.dcfacbaf.chunk.js",
+    "static/css/main.31d1f2d5.chunk.css",
+    "static/js/main.48b433cf.chunk.js"
+  ]
+}
