@@ -60,27 +60,27 @@ export default function Album() {
 
     const projects = [
         {
+          "img": "/react-scoreboard-thumbnail.png",
+          "projectTitle": "React Scoreboard",
+          "techUsed": "React.js / JavaScript",
+          "projectLink": "https://chrisj79.github.io/react-scoreboard",
+          "sourceCode": "https://github.com/ChrisJ79/react-scoreboard",
+          "key": "1"
+        },
+        {
           "img": "/react-noteboard-thumbnail.png",
           "projectTitle": "React Noteboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "http://ChrisJ79.github.io/noteboard",
           "sourceCode": "https://github.com/ChrisJ79/noteboard",
-          "key": "1"
-        },
-        {
-          "img": "/zurich-quiz-app-thumbnail.png",
-          "projectTitle": "Quiz App",
-          "techUsed": "jQuery / JavaScript / CSS / HTML",
-          "projectLink": "http://chrisj79.github.io/quiz-app/final.html",
-          "sourceCode": "https://github.com/ChrisJ79/quiz-app",
           "key": "2"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "RSVP App",
-          "techUsed": "React.js / JavaScript",
-          "projectLink": "",
-          "sourceCode": "",
+          "img": "/shopping-list-thumbnail.png",
+          "projectTitle": "Shopping List",
+          "techUsed": "jQuery / JavaScript / Bootstrap / CSS ",
+          "projectLink": "http://chrisj79.github.io/shopping-list/main.html",
+          "sourceCode": "https://github.com/ChrisJ79/shopping-list",
           "key": "3"
         },
         {
@@ -92,20 +92,20 @@ export default function Album() {
           "key": "4"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
-          "projectTitle": "Scoreboard",
+          "img": "/zurich-quiz-app-thumbnail.png",
+          "projectTitle": "Quiz App",
+          "techUsed": "jQuery / JavaScript / CSS / HTML",
+          "projectLink": "http://chrisj79.github.io/quiz-app/final.html",
+          "sourceCode": "https://github.com/ChrisJ79/quiz-app",
+          "key": "5"          
+        },
+        {
+          "img": "/coming-soon.png",
+          "projectTitle": "RSVP App",
           "techUsed": "React.js / JavaScript",
           "projectLink": "",
           "sourceCode": "",
-          "key": "5"
-        },
-        {
-          "img": "/shopping-list-thumbnail.png",
-          "projectTitle": "Shopping List",
-          "techUsed": "jQuery / JavaScript / Bootstrap / CSS ",
-          "projectLink": "http://chrisj79.github.io/shopping-list/main.html",
-          "sourceCode": "https://github.com/ChrisJ79/shopping-list",
-          "key": "6"
+          "key": "6"          
         }        
     ];
     return (
@@ -177,9 +177,8 @@ export default function Album() {
           return (
               <Grid item key={project.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                  <CardMedia>
-                    <img className="imgHeight" src={project.img} alt=""/>
-                  </CardMedia>
+                  <CardMedia className="imgHeight" src={project.img} alt=""/>
+
                   <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
