@@ -60,7 +60,7 @@ export default function Album() {
 
     const projects = [
         {
-          "img": "/react-scoreboard-thumbnail.png",
+          "img": "./react-scoreboard-thumbnail.png",
           "projectTitle": "React Scoreboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "https://chrisj79.github.io/react-scoreboard",
@@ -68,7 +68,7 @@ export default function Album() {
           "key": "1"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
+          "img": "./react-noteboard-thumbnail.png",
           "projectTitle": "React NNNNoteboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "http://ChrisJ79.github.io/noteboard",
@@ -76,7 +76,7 @@ export default function Album() {
           "key": "2"
         },
         {
-          "img": "/shopping-list-thumbnail.png",
+          "img": "./shopping-list-thumbnail.png",
           "projectTitle": "Shopping List",
           "techUsed": "jQuery / JavaScript / Bootstrap / CSS ",
           "projectLink": "http://chrisj79.github.io/shopping-list/main.html",
@@ -84,7 +84,7 @@ export default function Album() {
           "key": "3"
         },
         {
-          "img": "/giphy-api-thumbnail__1150x646.png",
+          "img": "./giphy-api-thumbnail__1150x646.png",
           "projectTitle": "Giphy API",
           "techUsed": "jQuery / JavaScript / UI Kit / CSS",
           "projectLink": "http://chrisj79.github.io/API-HACK/main.html",
@@ -92,7 +92,7 @@ export default function Album() {
           "key": "4"
         },
         {
-          "img": "/zurich-quiz-app-thumbnail.png",
+          "img": "./zurich-quiz-app-thumbnail.png",
           "projectTitle": "Quiz App",
           "techUsed": "jQuery / JavaScript / CSS / HTML",
           "projectLink": "http://chrisj79.github.io/quiz-app/final.html",
@@ -100,7 +100,7 @@ export default function Album() {
           "key": "5"          
         },
         {
-          "img": "/coming-soon.png",
+          "img": "./coming-soon.png",
           "projectTitle": "RSVP App",
           "techUsed": "React.js / JavaScript",
           "projectLink": "",
