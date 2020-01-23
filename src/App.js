@@ -118,7 +118,7 @@ export default function Album() {
         <Container maxWidth="sm" align="center">
 
           <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            Made with <br /><img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
+            Made with <br /><img src="./react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="./material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
           </Typography> 
 
           {/* <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
@@ -206,7 +206,7 @@ export default function Album() {
 
         {/* WP Sites Link Unit */} 
           <Container className={classes.cardGrid} maxWidth="sm" align="center">
-          <img src="/wordpress_logo__240w.png" alt="" />
+          <img src="./wordpress_logo__240w.png" alt="" />
           <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Click below to see some WordPress sites that I've built over the years.
           </Typography>
@@ -222,7 +222,7 @@ export default function Album() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          <img src="/github-icon__50x50.png" alt="" />
+          <img src="./github-icon__50x50.png" alt="" />
         </Typography>
       </footer>
       {/* End footer */}
