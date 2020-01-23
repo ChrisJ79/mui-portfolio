@@ -68,7 +68,7 @@ export default function Album() {
           "key": "1"
         },
         {
-          "img": "/react-noteboard-thumbnail.png",
+          "img": "/react-scoreboard-thumbnail.png",
           "projectTitle": "React Noteboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "http://ChrisJ79.github.io/noteboard",
