@@ -69,7 +69,7 @@ export default function Album() {
         },
         {
           "img": "./react-noteboard-thumbnail.png",
-          "projectTitle": "React NNNNoteboard",
+          "projectTitle": "React Noteboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "http://ChrisJ79.github.io/noteboard",
           "sourceCode": "https://github.com/ChrisJ79/noteboard",
@@ -130,9 +130,6 @@ export default function Album() {
                     <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
             <img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
           </Typography> */}
-
-
-
         </Container>  
         </Toolbar>
       </AppBar>
@@ -177,9 +174,15 @@ export default function Album() {
           return (
               <Grid item key={project.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
+
+
+
                   <CardMedia>
                     <img className="imgHeight" src={project.img} alt=""/>
                   </CardMedia>
+
+
+
                   <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
