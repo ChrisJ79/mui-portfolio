@@ -60,7 +60,7 @@ export default function Album() {
 
     const projects = [
         {
-          "img": "./react-scoreboard-thumbnail.png",
+          "img": "./react-scoreboard-thumbnail-1.png",
           "projectTitle": "React Scoreboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "https://chrisj79.github.io/react-scoreboard",
@@ -139,7 +139,7 @@ export default function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button href="" target="_blank" variant="contained" color="primary">
+                  <Button href="./cj_current_dev_res__2020.pdf" target="_blank" variant="contained" color="primary">
                     Resume
                   </Button>
                 </Grid>
