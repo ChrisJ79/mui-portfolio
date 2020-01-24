@@ -116,20 +116,9 @@ export default function Album() {
       <AppBar position="relative">
         <Toolbar>
         <Container maxWidth="sm" align="center">
-
           <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
             Made with <br /><img src="./react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="./material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
           </Typography> 
-
-          {/* <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            Made with <br />
-          </Typography>
-                    <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            <img src="/react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br />
-          </Typography>
-                    <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            <img src="/material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
-          </Typography> */}
         </Container>  
         </Toolbar>
       </AppBar>
@@ -150,12 +139,12 @@ export default function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button href="" target="_blank" variant="contained" color="primary">
                     Resume
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
+                  <Button href="https://github.com/ChrisJ79" target="_blank" variant="outlined" color="primary">
                     Github
                   </Button>
                 </Grid>
@@ -174,15 +163,9 @@ export default function Album() {
           return (
               <Grid item key={project.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-
-
-
                   <CardMedia>
                     <img className="imgHeight" src={project.img} alt=""/>
                   </CardMedia>
-
-
-
                   <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
@@ -210,7 +193,7 @@ export default function Album() {
           <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Click below to see some WordPress sites that I've built over the years.
           </Typography>
-            <Button variant="contained" size="large" color="primary" href="http://cjportfolio.flywheelsites.com/" target="_blank">
+            <Button variant="contained" size="large" color="primary" href="https://cjportfolio.flywheelsites.com/" target="_blank">
               View
             </Button>
           </Container>
