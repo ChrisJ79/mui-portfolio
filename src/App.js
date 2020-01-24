@@ -205,7 +205,9 @@ export default function Album() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
+        <Button href="https://github.com/ChrisJ79" target="_blank" color="primary">
           <img src="./github-icon__50x50.png" alt="" />
+        </Button>
         </Typography>
       </footer>
       {/* End footer */}
