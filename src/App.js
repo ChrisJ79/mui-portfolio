@@ -101,7 +101,7 @@ export default function Album() {
         },
         {
           "img": "./coming-soon.png",
-          "projectTitle": "RSVP App",
+          "projectTitle": "Upcoming Project",
           "techUsed": "React.js / JavaScript",
           "projectLink": "",
           "sourceCode": "",
