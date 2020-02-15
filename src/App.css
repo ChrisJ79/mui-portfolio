@@ -16,5 +16,10 @@
 .toolIconContainer {
   display: flex;
   justify-content: center;
-  align-items: center;    
+  align-items: center;
+}
+
+.tool {
+    height: 80px;
+    width: 80px;
 }

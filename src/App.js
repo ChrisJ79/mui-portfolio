@@ -36,8 +36,8 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center', 
-    alignItems: 'center'   
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -60,12 +60,20 @@ export default function Album() {
 
     const projects = [
         {
+          "img": "./multistep-form-thumbnail.png",
+          "projectTitle": "React Multi-Step Form",
+          "techUsed": "React.js / JavaScript / Material UI",
+          "projectLink": "https://chrisj79.github.io/step-form-app/",
+          "sourceCode": "https://github.com/ChrisJ79/step-form-app",
+          "key": "1"
+        },
+        {
           "img": "./react-scoreboard-thumbnail-1.png",
           "projectTitle": "React Scoreboard",
           "techUsed": "React.js / JavaScript",
           "projectLink": "https://chrisj79.github.io/react-scoreboard",
           "sourceCode": "https://github.com/ChrisJ79/react-scoreboard",
-          "key": "1"
+          "key": "2"
         },
         {
           "img": "./react-noteboard-thumbnail.png",
@@ -73,7 +81,7 @@ export default function Album() {
           "techUsed": "React.js / JavaScript",
           "projectLink": "http://ChrisJ79.github.io/noteboard",
           "sourceCode": "https://github.com/ChrisJ79/noteboard",
-          "key": "2"
+          "key": "3"
         },
         {
           "img": "./shopping-list-thumbnail.png",
@@ -81,7 +89,7 @@ export default function Album() {
           "techUsed": "jQuery / JavaScript / Bootstrap / CSS ",
           "projectLink": "http://chrisj79.github.io/shopping-list/main.html",
           "sourceCode": "https://github.com/ChrisJ79/shopping-list",
-          "key": "3"
+          "key": "4"
         },
         {
           "img": "./giphy-api-thumbnail__1150x646.png",
@@ -89,7 +97,7 @@ export default function Album() {
           "techUsed": "jQuery / JavaScript / UI Kit / CSS",
           "projectLink": "http://chrisj79.github.io/API-HACK/main.html",
           "sourceCode": "https://github.com/ChrisJ79/API-HACK",
-          "key": "4"
+          "key": "5"
         },
         {
           "img": "./zurich-quiz-app-thumbnail.png",
@@ -97,66 +105,125 @@ export default function Album() {
           "techUsed": "jQuery / JavaScript / CSS / HTML",
           "projectLink": "http://chrisj79.github.io/quiz-app/final.html",
           "sourceCode": "https://github.com/ChrisJ79/quiz-app",
-          "key": "5"          
+          "key": "6"
+        }
+    ];
+
+    const tools = [
+        {
+          "img": "./react.svg",
+          "title": "React.js",
+          "key": "1"
         },
         {
-          "img": "./coming-soon.png",
-          "projectTitle": "Upcoming Project",
-          "techUsed": "React.js / JavaScript",
-          "projectLink": "",
-          "sourceCode": "",
-          "key": "6"          
-        }        
+          "img": "./react-router.svg",
+          "title": "React Router",
+          "key": "2"
+        },
+        {
+          "img": "./redux.svg",
+          "title": "Redux",
+          "key": "3"
+        },
+        {
+          "img": "./firebase-1.svg",
+          "title": "Firebase",
+          "key": "4"
+        },
+        {
+          "img": "./bootstrap-4.svg",
+          "title": "Bootstrap",
+          "key": "5"
+        },
+        {
+          "img": "./material-ui.svg",
+          "title": "Material UI",
+          "key": "6"
+        },
+        {
+          "img": "./uikit.svg",
+          "title": "UIKit",
+          "key": "7"
+        },
+        {
+          "img": "./vue-9.svg",
+          "title": "Vue.js",
+          "key": "8"
+        },
     ];
+
+
+
+
     return (
 
-  <div>
-        {/* AppBar */}
+      <div>
+
+      {/* Header Section */}
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
         <Container maxWidth="sm" align="center">
           <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
             Made with <br /><img src="./react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="./material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
-          </Typography> 
-        </Container>  
+          </Typography>
+        </Container>
         </Toolbar>
       </AppBar>
-      <main>
-      {/* End Appbar */}
 
 
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Chris Johnson
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Front End Web Developer<br />
-              React Enthusiast
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button href="./cj_current_dev_res__2020.pdf" target="_blank" variant="contained" color="primary">
-                    Resume
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button href="https://github.com/ChrisJ79" target="_blank" variant="outlined" color="primary">
-                    Github
-                  </Button>
-                </Grid>
+
+      {/* hero */}
+      <div className={classes.heroContent}>
+        <Container maxWidth="sm">
+          <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+            Chris Johnson
+          </Typography>
+          <Typography variant="h5" align="center" color="textSecondary" paragraph>
+            Front End Web Developer<br />
+            React Enthusiast
+          </Typography>
+          <div className={classes.heroButtons}>
+            <Grid container spacing={2} justify="center">
+              <Grid item>
+                <Button href="./cj_current_dev_res__2020.pdf" target="_blank" variant="contained" color="primary">
+                  Resume
+                </Button>
               </Grid>
-            </div>
-          </Container>
-        </div>
-        {/* End hero unit */}
+              <Grid item>
+                <Button href="https://github.com/ChrisJ79" target="_blank" variant="outlined" color="primary">
+                  Github
+                </Button>
+              </Grid>
+            </Grid>
+          </div>
+        </Container>
+      </div>
+      {/* End Header Section */}
 
 
- 
-        {/* Project unit */}
+      {/* Tools  */}
+      <Container className={classes.cardGrid} maxWidth="sm">
+        <Grid container spacing={4}>
+      {tools.map((tool, index) => {
+        return (
+            <Grid item key={tool.key} xs={6} sm={4} md={3} align="center">
+              {/* <Card className={classes.card}> */}
+                  <img className="tool" src={tool.img} alt=""/>
+                {/* <CardContent align="center"> */}
+                  <Typography gutterBottom variant="p" component="p">{tool.title}</Typography>
+                {/* </CardContent> */}
+              {/* </Card> */}
+            </Grid>
+          );
+        })}
+        </Grid>
+      </Container>
+      {/* End Tools  */}
+
+
+
+      {/* Project Section */}
         <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container spacing={4}>
         {projects.map((project, index) => {
@@ -169,7 +236,7 @@ export default function Album() {
                   <CardContent align="center">
                     <Typography gutterBottom variant="h5" component="h2">{project.projectTitle}</Typography>
                     <p>{project.techUsed}</p>
-                  </CardContent> 
+                  </CardContent>
                   <CardActions align="center">
                     <Button size="small" color="primary" href={project.projectLink} target="_blank">
                       View Project
@@ -177,48 +244,38 @@ export default function Album() {
                     <Button size="small" color="primary" href={project.sourceCode} target="_blank">
                       Source Code
                     </Button>
-                  </CardActions>                  
+                  </CardActions>
                 </Card>
               </Grid>
             );
-         })}               
-            </Grid>
-          </Container>     
-        {/* End Project Unit */}      
+          })}
+          </Grid>
+        </Container>
 
 
-        {/* WP Sites Link Unit */} 
-          <Container className={classes.cardGrid} maxWidth="sm" align="center">
-          <img src="./wordpress_logo__240w.png" alt="" />
-          <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Click below to see some WordPress sites that I've built over the years.
-          </Typography>
-            <Button variant="contained" size="large" color="primary" href="https://cjportfolio.flywheelsites.com/" target="_blank">
-              View
-            </Button>
-          </Container>
-
-
-        {/* End WP Sites Link Unit */}      
-
-      </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-        <Button href="https://github.com/ChrisJ79" target="_blank" color="primary">
-          <img src="./github-icon__50x50.png" alt="" />
-        </Button>
+        {/* WP Sites */}
+        <Container className={classes.cardGrid} maxWidth="sm" align="center">
+        <img src="./wordpress_logo__240w.png" alt="" />
+        <Typography variant="h5" align="center" color="textSecondary" paragraph>
+            Click below to see some WordPress sites that I've built over the years.
         </Typography>
-      </footer>
-      {/* End footer */}
+          <Button variant="contained" size="large" color="primary" href="https://cjportfolio.flywheelsites.com/" target="_blank">
+            View
+          </Button>
+        </Container>
+        {/* End Project Section */}
 
-  </div>    
+
+        {/* Footer Section  */}
+        <footer className={classes.footer}>
+          <Typography variant="h6" align="center" gutterBottom>
+          <Button href="https://github.com/ChrisJ79" target="_blank" color="primary">
+            <img src="./github-icon__50x50.png" alt="" />
+          </Button>
+          </Typography>
+        </footer>
+        {/* End Footer Section */}
+
+      </div>
     )
 }
-
-
-
-
-
-
-
