@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/mui-portfolio/static/css/main.31d1f2d5.chunk.css",
-    "main.js": "/mui-portfolio/static/js/main.d34d4714.chunk.js",
-    "main.js.map": "/mui-portfolio/static/js/main.d34d4714.chunk.js.map",
+    "main.css": "/mui-portfolio/static/css/main.0b46504f.chunk.css",
+    "main.js": "/mui-portfolio/static/js/main.9afb78a5.chunk.js",
+    "main.js.map": "/mui-portfolio/static/js/main.9afb78a5.chunk.js.map",
     "runtime-main.js": "/mui-portfolio/static/js/runtime-main.0788d335.js",
     "runtime-main.js.map": "/mui-portfolio/static/js/runtime-main.0788d335.js.map",
     "static/js/2.b9ea282a.chunk.js": "/mui-portfolio/static/js/2.b9ea282a.chunk.js",
     "static/js/2.b9ea282a.chunk.js.map": "/mui-portfolio/static/js/2.b9ea282a.chunk.js.map",
     "index.html": "/mui-portfolio/index.html",
-    "precache-manifest.0bb6954516a22052e6ca87fda3dda1ac.js": "/mui-portfolio/precache-manifest.0bb6954516a22052e6ca87fda3dda1ac.js",
+    "precache-manifest.5349d464ea2675562da98dc591485e28.js": "/mui-portfolio/precache-manifest.5349d464ea2675562da98dc591485e28.js",
     "service-worker.js": "/mui-portfolio/service-worker.js",
-    "static/css/main.31d1f2d5.chunk.css.map": "/mui-portfolio/static/css/main.31d1f2d5.chunk.css.map",
+    "static/css/main.0b46504f.chunk.css.map": "/mui-portfolio/static/css/main.0b46504f.chunk.css.map",
     "static/js/2.b9ea282a.chunk.js.LICENSE": "/mui-portfolio/static/js/2.b9ea282a.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.0788d335.js",
     "static/js/2.b9ea282a.chunk.js",
-    "static/css/main.31d1f2d5.chunk.css",
-    "static/js/main.d34d4714.chunk.js"
+    "static/css/main.0b46504f.chunk.css",
+    "static/js/main.9afb78a5.chunk.js"
   ]
 }
