@@ -16,6 +16,8 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import './App.css';
 
+import Paper from '@material-ui/core/Paper';
+
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -50,12 +52,46 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+
+
+
+
+
+  root: {
+  // height: '100vh',
+},
+image: {
+  backgroundImage: 'url(https://source.unsplash.com/random)',
+  backgroundRepeat: 'no-repeat',
+  backgroundColor:
+    theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+},
+paper: {
+  margin: theme.spacing(8, 4),
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+},
+avatar: {
+  margin: theme.spacing(1),
+  backgroundColor: theme.palette.secondary.main,
+},
+form: {
+  width: '100%', // Fix IE 11 issue.
+  marginTop: theme.spacing(1),
+},
+submit: {
+  margin: theme.spacing(3, 0, 2),
+},
 }));
 
 
 
 
 export default function Album() {
+
     const classes = useStyles();
 
     const projects = [
@@ -154,7 +190,6 @@ export default function Album() {
 
 
 
-
     return (
 
       <div>
@@ -221,6 +256,24 @@ export default function Album() {
       </Container>
       {/* End Tools  */}
 
+      {/* Featured Project Section */}
+      <Container className={classes.cardGrid} maxWidth="lg">
+        <Grid container component="main" className={classes.root}>
+          <CssBaseline />
+
+          <Grid item xs={12} sm={8} md={6} component={Paper} elevation={6} square>
+            <div className={classes.paper}>
+              <h1>Featured Project</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus eget nunc.</p><p>Quis risus sed vulputate odio ut enim blandit volutpat. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Risus nullam eget felis eget. Ultrices neque ornare aenean euismod elementum. Ultricies tristique nulla aliquet enim tortor. Adipiscing elit duis tristique sollicitudin nibh sit. Vitae congue eu consequat ac felis donec et.</p><p> Malesuada nunc vel risus commodo viverra. Enim nunc faucibus a pellentesque sit. Pellentesque massa placerat duis ultricies lacus sed. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Ut sem viverra aliquet eget sit amet tellus cras.</p>
+
+
+            </div>
+          </Grid>
+          <Grid item xs={false} sm={4} md={6} className={classes.image} />
+        </Grid>
+      </Container>
+
+      {/* End - Featured Project Section */}
 
 
       {/* Project Section */}
