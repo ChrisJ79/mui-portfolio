@@ -14,10 +14,15 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+
+import Header from './components/header/header'
+import Tools from './components/tools/tools'
+
 import './App.css';
 
 import Paper from '@material-ui/core/Paper';
 import Grow from '@material-ui/core/Grow';
+
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -52,11 +57,6 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
-
-
-
-
-
   root: {
   // height: '100vh',
 },
@@ -150,116 +150,15 @@ export default function Album() {
         }
     ];
 
-    const tools = [
-        {
-          "img": "./react.svg",
-          "title": "React.js",
-          "key": "1"
-        },
-        {
-          "img": "./react-router.svg",
-          "title": "React Router",
-          "key": "2"
-        },
-        {
-          "img": "./redux.svg",
-          "title": "Redux",
-          "key": "3"
-        },
-        {
-          "img": "./firebase-1.svg",
-          "title": "Firebase",
-          "key": "4"
-        },
-        {
-          "img": "./bootstrap-4.svg",
-          "title": "Bootstrap",
-          "key": "5"
-        },
-        {
-          "img": "./material-ui.svg",
-          "title": "Material UI",
-          "key": "6"
-        },
-        {
-          "img": "./uikit.svg",
-          "title": "UIKit",
-          "key": "7"
-        },
-        {
-          "img": "./vue-9.svg",
-          "title": "Vue.js",
-          "key": "8"
-        },
-    ];
+
 
 
 
     return (
 
       <div>
-
-      {/* Header Section */}
-      <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-        <Container maxWidth="sm" align="center">
-          <Typography variant="h6" color="inherit" noWrap className="toolIconContainer">
-            Made with <br /><img src="./react_no_bg__56x50.png" className="toolIcon"  alt=""/> React.js & <br /><img src="./material-ui__62x50.png" className="toolIcon" alt=""/> Material UI
-          </Typography>
-        </Container>
-        </Toolbar>
-      </AppBar>
-
-
-
-      {/* hero */}
-      <div className={classes.heroContent}>
-        <Container maxWidth="sm">
-          <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-            Chris Johnson
-          </Typography>
-          <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Front End Web Developer<br />
-            React Enthusiast
-          </Typography>
-          <div className={classes.heroButtons}>
-            <Grid container spacing={2} justify="center">
-              <Grid item>
-                <Button href="./cj_current_dev_res__2020.pdf" target="_blank" variant="contained" color="primary">
-                  Resume
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button href="https://github.com/ChrisJ79" target="_blank" variant="outlined" color="primary">
-                  Github
-                </Button>
-              </Grid>
-            </Grid>
-          </div>
-        </Container>
-      </div>
-      {/* End Header Section */}
-
-
-      {/* Tools  */}
-      <Container className={classes.cardGrid} maxWidth="sm">
-        <Grid container spacing={4}>
-      {tools.map((tool, index) => {
-        return (
-            <Grid item key={tool.key} xs={6} sm={4} md={3} align="center">
-              {/* <Card className={classes.card}> */}
-                  <img className="tool" src={tool.img} alt=""/>
-                {/* <CardContent align="center"> */}
-                  <Typography gutterBottom variant="p" component="p">{tool.title}</Typography>
-                {/* </CardContent> */}
-              {/* </Card> */}
-            </Grid>
-          );
-        })}
-        </Grid>
-      </Container>
-      {/* End Tools  */}
+        <Header />
+        <Tools />
 
       {/* Featured Project Section */}
       <Container className={classes.cardGrid} maxWidth="lg">
