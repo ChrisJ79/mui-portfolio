@@ -1,10 +1,6 @@
-import React, {Component} from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Toolbar from '@material-ui/core/Toolbar';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -65,7 +61,7 @@ export default function Tools() {
   return (
     <Container className={classes.cardGrid} maxWidth="sm">
       <Grid container spacing={4}>
-    {tools.map((tool, index) => {
+      {tools.map((tool, index) => {
       return (
           <Grid item key={tool.key} xs={6} sm={4} md={3} align="center">
                 <img className="tool" src={tool.img} alt=""/>
