@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import '../../App.css';
+import '../../App.scss';
 
 const useStyles = makeStyles(theme => ({
     cardGrid: {

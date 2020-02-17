@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 480px) {
+    header {
+        h6 {
+          font-size: 12px !important;
+            img {
+              height: 16px !important;
+            }
+
+        }
+    }
+}
+
 .imgHeight {
   height: auto;
   width: 100%;
