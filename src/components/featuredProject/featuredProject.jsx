@@ -43,7 +43,7 @@ export default function FeaturedProject() {
       <Grid container component="main" className={classes.root}>
         {featuredProject.map((project, index) => {
           return (
-          <Grid item xs={12} sm={8} md={6} component={Paper} elevation={6} square>
+          <Grid item item key={project.key} xs={12} sm={8} md={6} component={Paper} elevation={6} square>
             <div className={classes.paper}>
               <h1>Featured Project</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus eget nunc.</p><p>Quis risus sed vulputate odio ut enim blandit volutpat. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Risus nullam eget felis eget. Ultrices neque ornare aenean euismod elementum. Ultricies tristique nulla aliquet enim tortor. Adipiscing elit duis tristique sollicitudin nibh sit. Vitae congue eu consequat ac felis donec et.</p><p> Malesuada nunc vel risus commodo viverra. Enim nunc faucibus a pellentesque sit. Pellentesque massa placerat duis ultricies lacus sed. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Ut sem viverra aliquet eget sit amet tellus cras.</p>
