@@ -59,11 +59,11 @@ export default function Tools() {
       },
   ];
   return (
-    <Container className={classes.cardGrid} maxWidth="sm">
-      <Grid container spacing={4}>
+    <Container className={classes.cardGrid} maxWidth="xl">
+      <Grid container spacing={4} className="flexGrid">
       {tools.map((tool, index) => {
       return (
-          <Grid item key={tool.key} xs={6} sm={4} md={3} align="center">
+          <Grid item key={tool.key} xs={6} sm={4} md={1} align="center">
                 <img className="tool" src={tool.img} alt=""/>
                 <Typography gutterBottom variant="p" component="p">{tool.title}</Typography>
           </Grid>
